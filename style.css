@@ -13,6 +13,14 @@ h1{
     margin:auto;
     margin-bottom: 7%;
 }
+.youtubelink{
+    color: #a42723;
+    margin-left: 0;
+    font-family: franklin-gothic-atf, sans-serif;
+}
+.youtubelink:hover{
+    text-decoration: underline;
+}
 button{
     filter: drop-shadow(0px 2px 2px lightgrey);
 }
