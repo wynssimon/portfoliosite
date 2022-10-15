@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Wyns</title>
+    <link rel="icon" href="img/MyLogo.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ddr4ioc.css">
+</head>
+<body>
+    <a href="index.html"><h1>Simon Wyns</h1></a>
+    <div class="rectangle"></div>
+    <ul id="links2">
+        <ul><a id="onderlijning" class="bio-knop" href="#bio">Bio</a></ul>
+        <br>
+        <ul><a id="onderlijning" class="portfolio-knop" href="#portfolio">Portfolio</a></ul>
+        <br>
+        <ul><a id="onderlijning" class="contact-knop" href="#contact">Contact</a></ul>
+        <ul><a id="onderlijning" class="contact-knop" href="pages/youtube.html">YouTube</a></ul>
+    </ul> 
+    <div class="hamburger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>  
+    <div id="links">
+        <a href="#bio">Bio</a>
+        <br>
+        <a href="#portfolio">Portfolio</a>
+        <br>
+        <a href="#contact">Contact</a>
+        <br>
+        <a href="youtube.html">YouTube</a>
+    </div> 
+    <div id="bio" class="bio">
+        <div class="container">
+            <h2 class="wie">Wie ben ik?</h2>
+        </div>
+        <div class="line"></div>
+        <div class="grid1">
+            <img class="simon" src="img/simon.jpg" alt="">
+            <p>Ik ben Simon Wyns, 19 jaar, en ik studeer grafische & 
+                digitale media aan de AP Hogeschool in Antwerpen. In 
+                juni 2023 studeer ik normaal gezien af.
+                Ik hou van heel de interface wereld, van appdesign tot 
+                webdesign, maar ik besef ook dat ik hier nog enorm 
+                veel over te leren heb.
+                Ik studeer af met kennis van front-end EN back-end development, kortom als een full-stack developer.
+                <br>
+                In mijn vrije tijd speel ik accordeon en maak ik er YouTube 
+                video's mee. Ook hou ik heel veel van sporten, van 
+                voetbal tot wielrennen tot lopen.
+                <br>
+                <br>
+                <button class="hier"><a class="download" href="./cv.pdf" download>Download mijn cv</a> </button>
+                </p>    
+        </div>
+    </div>
+    <div id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="wie">Portfolio werken</h2>
+        </div>        
+        <div class="line"></div>
+        <div class="mijnwerken">
+            <a href="pages/kerstvideo.html">
+                <div class="mijnwerken-image" id="kerstvideo"> 
+                    <img class="werkenfoto" src="img/video-mockup.png" alt="">
+                    <div class="middle">
+                        <div class="text">Kerstvideo</div>
+                    </div>
+                </div>
+            </a>
+            <a href="pages/mars.html">
+                <div class="mijnwerken-image">
+                    <img class="werkenfoto" src="img/mars-mockup.png" alt="">
+                    <div class="middle">
+                        <div class="text">Muziekvisualisatie</div>
+                    </div>
+                </div>    
+            </a>
+            <a href="pages/logo.html">
+                <div class="mijnwerken-image">     
+                    <img class="werkenfoto" src="img/logo-mockup.png" alt="">
+                    <div class="middle">
+                        <div class="text">Logo Advocatenbureau</div>
+                    </div>
+                </div>    
+            </a>
+            <a href="pages/countdown.html">
+                <div class="mijnwerken-image">  
+                    <img class="werkenfoto" src="img/countdown-mockup.png" alt="">
+                    <div class="middle">
+                        <div class="text">Countdown-site</div>
+                    </div>
+                </div>    
+            </a>
+            <a href="pages/weer.html">
+                <div class="mijnwerken-image">    
+                    <img class="werkenfoto" src="img/weatherapp-mockup.png" alt="">
+                    <div class="middle">
+                        <div class="text">Weersite</div>
+                    </div>
+                </div>
+            </a>
+            <a href="pages/video.html">    
+                <div class="mijnwerken-image">      
+                    <img class="werkenfoto" src="img/yt-mockup.png" alt="">
+                    <div class="middle">
+                        <div class="text">YouTubevideo</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <div class="container">
+            <h2 class="wie">Contact</h2>
+        </div>        
+        <div class="line"></div>
+        <form class="contact-form" name="contact" method="post" >
+            <label id="naam" class="placeholder" for="">Naam</label>
+            <br>
+            <input id="naam" name="name" placeholder="jouw naam..." type="text" name="fname" required>
+            <br>
+            <label id="onderwerp" class="placeholder" for="">Onderwerp</label>
+            <br>
+            <input id="onderwerp" placeholder="onderwerp..." type="text" name="subject" required>
+            <br>
+            <label id="phone" class="placeholder" for="">GSM-nummer</label>
+            <br>
+            <input id="phone" placeholder="jouw nummer..." type="text" name="phone">
+            <br>
+            <label id="message" class="placeholder" for="">Je bericht</label>
+            <br>
+            <textarea id="message" name="message" placeholder="je bericht..."></textarea>
+            <br>
+            <button name="send" type="submit" id="send">Verzend</button>
+        </form>
+    </div>
+    <footer>Copyright 2022 © - All rights reserved </footer>
+    <div class="rectangle2"></div>
+    <script src="./script.js"></script>
+</body>
+</html>

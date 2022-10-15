@@ -1,0 +1,67 @@
+span{
+    color:#a42723;
+}
+iframe{
+    width:90%;
+    height:20vh;
+}
+.video{
+    padding-left: 5%;
+}
+.foto-logo{
+    width: 90%;
+}
+.fotologoimg{
+    width:100%;
+    margin-left: 5%;
+}
+@media (min-width:800px)  {
+.video{
+    width:90%;
+    margin-left: 5%;
+    padding-left: 0%;
+}
+iframe{
+    width:100%;
+    height:30vh;
+}    
+}
+@media (min-width:1200px)  {
+    p{
+        margin-bottom: 0.5%;
+        margin-top: 0.5%;
+        margin-left: 0;
+    }
+    .uitleg-werk{
+        margin: 0 0 0 2%;
+        font-size: 20px;
+    }
+    .opdracht{
+        width:40%;
+        margin: 0 0 0 5%;
+        float: left;
+    }
+    .video{
+        float: right;
+        width: 40%;
+        margin: 0 5% 0 0;
+    }
+    iframe{
+        width:100%;
+        height:45vh;
+    }
+    footer{
+        float:left;
+        width:100%;
+        margin: 2% 0 0 0;
+    }
+    .foto-logo{
+        float: right;
+        width: 40%;
+        margin: 0 5% 0 0;
+    }
+    .fotologoimg{
+        width:100%;
+    }
+}
+
