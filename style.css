@@ -32,6 +32,14 @@ h2{
     margin-right: 5%;
     position: relative;
 }
+.contactgegevens{
+    color:#a42723;
+    font-family: franklin-gothic-atf, sans-serif;
+    margin-left: 0%;
+}
+.mijngegevens{
+    display: flex;
+}
 .rectangle{
     position: absolute;
     height:20px;
@@ -101,12 +109,12 @@ h3{
 .mijnwerken-image:hover .middle {
     opacity: 1;
  }
- .text {
+.text {
     color: black;
     font-size: 20px;
     font-family: franklin-gothic-atf, sans-serif;
   }
-  .middle {
+.middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -171,34 +179,8 @@ a{
     color:black;
     margin-left: 0%;
 }
-.contact-form{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 2rem;
-    font-family: "open sans";
-}
-.contact{
-    margin-bottom: 0%;
-}
-label{
-    font-size: 17px;
-}
-input, textarea{
-    margin-bottom: 4%;
-    margin-top: 5%;
-    font-size: 15px;
-    border:0px;
-    height:20px;
-    font-family: franklin-gothic-atf, sans-serif;
-}
-textarea{
-    height:60px;
-}
-input:focus, textarea:focus{
-    background-color: #D1DDF2;
-    border:0px;
-    border:1px solid #92A8D1;
-
+span{
+    color:#a42723;
 }
 button{
     font-family: "open sans";
@@ -282,21 +264,29 @@ button{
 }
 
 @media (min-width:500px)  {
-input, textarea{
-    margin-top: 2%;
-}
+
 }
 @media (min-width:700px)  {
-    .contact-form{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap:5%;
-    }
     .mijnwerken{
         grid-template-columns: 1fr 1fr;
         height:45rem;
         grid-gap:1%;
+    }
+    .mijngegevens{
+        margin: 0 5% 0 5%;
+    }
+    .gegevens, .map{
+        width:45%;
+    }
+    .map{
+        width:5%
+    }
+    .gegevens{
+        float:left;
+    }
+    .map{
+        float: right;
+        margin: 0 0 0 0;
     }
     button{
         grid-row-start: 3;
@@ -308,19 +298,6 @@ input, textarea{
     #naam{
         grid-column-start: 1;
         grid-row-start: 1;
-    }
-    label{
-        margin-left: 5%;
-    }
-    input, textarea{
-        margin-top: 2rem;
-        height:30px;
-        margin-left: 5%;
-        margin-right: 0;
-        width:90%;
-    }
-    textarea{
-        height:60px;
     }
     #onderwerp{
         grid-column-start: 2;
@@ -404,18 +381,6 @@ input, textarea{
     button{
         height:5rem;
     }
-    input, textarea{
-        font-size: 25px;
-        height:40px;
-        margin-top: 3rem;
-    }
-    textarea{
-        height:80px;
-    }
-    label{
-        font-size: 25px;
-        cursor:auto;
-    }
     .rectangle{
         height:50px;
         width:800px;
@@ -458,9 +423,6 @@ input, textarea{
     .grid1{
         grid-template-columns: 25% 75%;
     }
-    .contact-form{
-        margin-top: 2%;
-    }
    #send{
         width:40%;
         margin-left: 30%;
@@ -471,7 +433,7 @@ input, textarea{
     #links2{
         display: flex;
         width:20%;
-        margin-left: 62%;
+        margin-left: 69%;
     }
     .portfolio-knop{
         grid-column-start: 2;
@@ -502,9 +464,6 @@ input, textarea{
         opacity: 0;
         transition: opacity 300ms, transform 300ms;
     }
-    .contact{
-        margin-top:0%;
-    }
     #onderlijning:hover::after,
     #onderlijning:focus::after {
         opacity: 1;
@@ -528,9 +487,6 @@ input, textarea{
     }
 }
 @media (min-width:1900px)  {
-    .contact{
-        margin-top: 2%;
-    }
     p{
         line-height: 40px;
     }
