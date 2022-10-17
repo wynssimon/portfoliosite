@@ -37,8 +37,19 @@ h2{
     font-family: franklin-gothic-atf, sans-serif;
     margin-left: 0%;
 }
-.mijngegevens{
-    display: flex;
+.map iframe{
+    width:100%;
+    height:50vw;
+}
+.gegevens{
+    margin:0 5% 0 5%;
+    width:98%;
+}
+.gegevens p{
+    margin-left: 0%;
+}
+.map{
+    margin:0 5% 0 5%;
 }
 .rectangle{
     position: absolute;
@@ -56,7 +67,7 @@ h2{
     height:20px;
     width:150px;
     top:95%;
-    left:65%;
+    left:68%;
     background-color: #a42723;
     transform: rotate(-45deg);
     z-index: -1;
@@ -64,14 +75,13 @@ h2{
 }
 h3{
     font-family: "open sans";
-    text-align: center;
+    text-align: left;
     font-size: 15px;
-    margin-top: 12%;
 }
 .line{
     margin-left: 5%;
     height:2px;
-    width:85%;
+    width:90%;
     background-color:#a42723;
     position: absolute;
 }
@@ -124,7 +134,7 @@ h3{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
 p{
     margin-left: 5%;
     margin-right: 5%;
@@ -195,7 +205,6 @@ button{
     transition: 1.5s;
     filter: drop-shadow(0px 4px 4px grey);
 }
-
 button:hover{
     padding-right: 24px;
     padding-left:8px;
@@ -236,7 +245,6 @@ button{
     width: 0;
     animation: typing 1s steps(20, end) forwards,
     blink .8s infinite;
-
 }
 .container {
     display: inline-block;
@@ -271,22 +279,25 @@ button{
         grid-template-columns: 1fr 1fr;
         height:45rem;
         grid-gap:1%;
+        margin-top: 3%;
     }
     .mijngegevens{
-        margin: 0 5% 0 5%;
+        margin: 1% 5% 0 5%;
+        display: flex;
     }
     .gegevens, .map{
-        width:45%;
-    }
-    .map{
-        width:5%
+        width:100%;
     }
     .gegevens{
         float:left;
     }
     .map{
-        float: right;
+        float:right;
         margin: 0 0 0 0;
+    }
+    .map iframe{
+        width:100%;
+        height:50vh;
     }
     button{
         grid-row-start: 3;
@@ -329,9 +340,6 @@ button{
         font-size: 20px;
         line-height: 40px;
     }
-    h3{
-        margin-top: 5%;
-    }
     .rectangle{
         height:40px;
         width:500px;
@@ -369,7 +377,6 @@ button{
     }
     h3{
         font-size: 25px;
-        margin-top: 5%;
     }
     .grid1{
         display: grid;
@@ -417,7 +424,7 @@ button{
         font-size: 22px;
         line-height: 30px;
     }
-    .bio{
+    .bio, .portfolio, .contact{
         margin-bottom: 2%;
     }
     .grid1{
