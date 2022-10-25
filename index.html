@@ -1,135 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simon Wyns</title>
-    <link rel="icon" href="img/MyLogo.png" type="image/png">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ddr4ioc.css">
-</head>
-<body>
+    <link rel="icon" href="img/MyLogo.png" type="image/png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ddr4ioc.css" />
+    <link rel="musicxml" href="./Band_Of_Brothers.musicxml" />
+  </head>
+  <body>
     <a href="index.html"><h1>Simon Wyns</h1></a>
     <div class="rectangle"></div>
     <ul id="links2">
-        <ul><a id="onderlijning" class="bio-knop" href="#bio">Bio</a></ul>
-        <br>
-        <ul><a id="onderlijning" class="portfolio-knop" href="#portfolio">Portfolio</a></ul>
-        <br>
-        <ul><a id="onderlijning" class="contact-knop" href="#contact">Contact</a></ul>
-    </ul> 
+      <ul>
+        <a id="onderlijning" class="bio-knop" href="#bio">Bio</a>
+      </ul>
+      <br />
+      <ul>
+        <a id="onderlijning" class="portfolio-knop" href="#portfolio"
+          >Portfolio</a
+        >
+      </ul>
+      <br />
+      <ul>
+        <a id="onderlijning" class="contact-knop" href="#contact">Contact</a>
+      </ul>
+    </ul>
     <div class="hamburger" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>  
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
     <div id="links">
-        <a href="#bio">Bio</a>
-        <br>
-        <a href="#portfolio">Portfolio</a>
-        <br>
-        <a href="#contact">Contact</a>
-    </div> 
+      <a href="#bio">Bio</a>
+      <br />
+      <a href="#portfolio">Portfolio</a>
+      <br />
+      <a href="#contact">Contact</a>
+    </div>
     <div id="bio" class="bio">
-        <div class="container">
-            <h2 class="wie">Wie ben ik?</h2>
-        </div>
-        <div class="line"></div>
-        <div class="grid1">
-            <img class="simon" src="img/simon.jpg" alt="">
-            <p>Ik ben Simon Wyns, 19 jaar, en ik studeer grafische & 
-                digitale media aan de AP Hogeschool in Antwerpen. In 
-                juni 2023 studeer ik normaal gezien af.
-                Ik hou van heel de interface wereld, van appdesign tot 
-                webdesign, maar ik besef ook dat ik hier nog enorm 
-                veel over te leren heb.
-                Normaal gezien studeer ik af in juni 2023, met kennis van HTML, CSS, JavaScript, PHP, ...; maar ook met kunde op vlak van video, photoshop, illustrator, ...
-                <br>
-                In mijn vrije tijd speel ik accordeon en maak ik er <a class="youtubelink" href="https://www.youtube.com/channel/UCRW1Ty0oqCTkIgfujuuQL7g" target="_blank">YouTube</a>  
-                video's mee. Ook hou ik heel veel van sporten, van 
-                voetbal tot wielrennen tot lopen.
-                <br>
-                <br>
-                <button class="hier"><a class="download" href="./cv.pdf" download>Download mijn cv</a> </button>
-                </p>    
-        </div>
+      <div class="container">
+        <h2 class="wie">Wie ben ik?</h2>
+      </div>
+      <div class="line"></div>
+      <div class="grid1">
+        <img class="simon" src="img/simon.jpg" alt="" />
+        <p>
+          Ik ben Simon Wyns, 19 jaar, en ik studeer grafische & digitale media
+          aan de AP Hogeschool in Antwerpen. In juni 2023 studeer ik normaal
+          gezien af. Ik hou van heel de interface wereld, van appdesign tot
+          webdesign, maar ik besef ook dat ik hier nog enorm veel over te leren
+          heb. Normaal gezien studeer ik af in juni 2023, met kennis van HTML,
+          CSS, JavaScript, PHP, ...; maar ook met kunde op vlak van video,
+          photoshop, illustrator, ...
+          <br />
+          In mijn vrije tijd speel ik accordeon en maak ik er
+          <a
+            class="youtubelink"
+            href="https://www.youtube.com/channel/UCRW1Ty0oqCTkIgfujuuQL7g"
+            target="_blank"
+            >YouTube</a
+          >
+          video's mee. Ook hou ik heel veel van sporten, van voetbal tot
+          wielrennen tot lopen.
+          <br />
+          <br />
+          <button class="hier">
+            <a class="download" href="./cv.pdf" download>Download mijn cv</a>
+          </button>
+        </p>
+      </div>
     </div>
     <div id="portfolio" class="portfolio">
-        <div class="container">
-            <h2 class="wie">Portfolio werken</h2>
-        </div>        
-        <div class="line"></div>
-        <div class="mijnwerken">
-            <a href="pages/kerstvideo.html">
-                <div class="mijnwerken-image" id="kerstvideo"> 
-                    <img class="werkenfoto" src="img/video-mockup.jpg" alt="">
-                    <div class="middle">
-                        <div class="text">Kerstvideo</div>
-                    </div>
-                </div>
-            </a>
-            <a href="pages/mars.html">
-                <div class="mijnwerken-image">
-                    <img class="werkenfoto" src="img/mars-mockup.jpg" alt="">
-                    <div class="middle">
-                        <div class="text">Muziekvisualisatie</div>
-                    </div>
-                </div>    
-            </a>
-            <a href="pages/logo.html">
-                <div class="mijnwerken-image">     
-                    <img class="werkenfoto" src="img/logo-mockup.jpg" alt="">
-                    <div class="middle">
-                        <div class="text">Logo Advocatenbureau</div>
-                    </div>
-                </div>    
-            </a>
-            <a href="pages/countdown.html">
-                <div class="mijnwerken-image">  
-                    <img class="werkenfoto" src="img/countdown-mockup.jpg" alt="">
-                    <div class="middle">
-                        <div class="text">Countdown-site</div>
-                    </div>
-                </div>    
-            </a>
-            <a href="pages/weer.html">
-                <div class="mijnwerken-image">    
-                    <img class="werkenfoto" src="img/weatherapp-mockup.jpg" alt="">
-                    <div class="middle">
-                        <div class="text">Weersite</div>
-                    </div>
-                </div>
-            </a>
-            <a href="pages/video.html">    
-                <div class="mijnwerken-image">      
-                    <img class="werkenfoto" src="img/yt-mockup.jpg" alt="">
-                    <div class="middle">
-                        <div class="text">YouTubevideo</div>
-                    </div>
-                </div>
-            </a>
-        </div>
+      <div class="container">
+        <h2 class="wie">Portfolio werken</h2>
+      </div>
+      <div class="line"></div>
+      <div class="mijnwerken">
+        <a href="pages/kerstvideo.html">
+          <div class="mijnwerken-image" id="kerstvideo">
+            <img class="werkenfoto" src="img/video-mockup.jpg" alt="" />
+            <div class="middle">
+              <div class="text">Kerstvideo</div>
+            </div>
+          </div>
+        </a>
+        <a href="pages/mars.html">
+          <div class="mijnwerken-image">
+            <img class="werkenfoto" src="img/mars-mockup.jpg" alt="" />
+            <div class="middle">
+              <div class="text">Muziekvisualisatie</div>
+            </div>
+          </div>
+        </a>
+        <a href="pages/logo.html">
+          <div class="mijnwerken-image">
+            <img class="werkenfoto" src="img/logo-mockup.jpg" alt="" />
+            <div class="middle">
+              <div class="text">Logo Advocatenbureau</div>
+            </div>
+          </div>
+        </a>
+        <a href="pages/countdown.html">
+          <div class="mijnwerken-image">
+            <img class="werkenfoto" src="img/countdown-mockup.jpg" alt="" />
+            <div class="middle">
+              <div class="text">Countdown-site</div>
+            </div>
+          </div>
+        </a>
+        <a href="pages/weer.html">
+          <div class="mijnwerken-image">
+            <img class="werkenfoto" src="img/weatherapp-mockup.jpg" alt="" />
+            <div class="middle">
+              <div class="text">Weersite</div>
+            </div>
+          </div>
+        </a>
+        <a href="pages/video.html">
+          <div class="mijnwerken-image">
+            <img class="werkenfoto" src="img/yt-mockup.jpg" alt="" />
+            <div class="middle">
+              <div class="text">YouTubevideo</div>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
     <div id="contact" class="contact">
-        <div class="container">
-            <h2 class="wie">Contact</h2>
-        </div>        
-        <div class="line"></div>
-        <div class="mijngegevens">
-                <div class="gegevens">
-                    <h3>Aarzel niet om mij te contacteren</h3>
-                    <p>e-mail: <span><a  class="contactgegevens" href="mailto:wynssimonw@gmail.com">wynssimonw@gmail.com</a></span></p>
-                    <p>gsm-nummer: <span><a  class="contactgegevens" href="tel:0493120797">04/93 12 07 97</a></span></p>
-                    <p>adres: <span><a  class="contactgegevens" href="https://www.google.com/maps/place/Langestraat+42,+2930+Brasschaat/@51.3059034,4.4770883,17z/data=!3m1!4b1!4m5!3m4!1s0x47c408804db1d865:0xe4dddd9ac3ba2f52!8m2!3d51.3059001!4d4.479277" target="_blank">Langestraat 42, 2930 Brasschaat</a></span></p>
-                </div>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2494.283765837714!2d4.477088315966468!3d51.30590343323635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c408804db1d865%3A0xe4dddd9ac3ba2f52!2sLangestraat%2042%2C%202930%20Brasschaat!5e0!3m2!1sen!2sbe!4v1666000575068!5m2!1sen!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
-                </div>
+      <div class="container">
+        <h2 class="wie">Contact</h2>
+      </div>
+      <div class="line"></div>
+      <div class="mijngegevens">
+        <div class="gegevens">
+          <h3>Aarzel niet om mij te contacteren</h3>
+          <p>
+            e-mail:
+            <span
+              ><a class="contactgegevens" href="mailto:wynssimonw@gmail.com"
+                >wynssimonw@gmail.com</a
+              ></span
+            >
+          </p>
+          <p>
+            gsm-nummer:
+            <span
+              ><a class="contactgegevens" href="tel:0493120797"
+                >04/93 12 07 97</a
+              ></span
+            >
+          </p>
+          <p>
+            adres:
+            <span
+              ><a
+                class="contactgegevens"
+                href="https://www.google.com/maps/place/Langestraat+42,+2930+Brasschaat/@51.3059034,4.4770883,17z/data=!3m1!4b1!4m5!3m4!1s0x47c408804db1d865:0xe4dddd9ac3ba2f52!8m2!3d51.3059001!4d4.479277"
+                target="_blank"
+                >Langestraat 42, 2930 Brasschaat</a
+              ></span
+            >
+          </p>
         </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2494.283765837714!2d4.477088315966468!3d51.30590343323635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c408804db1d865%3A0xe4dddd9ac3ba2f52!2sLangestraat%2042%2C%202930%20Brasschaat!5e0!3m2!1sen!2sbe!4v1666000575068!5m2!1sen!2sbe"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
     </div>
-    <footer>Copyright 2022 © - All rights reserved </footer>
+    <footer>Copyright 2022 © - All rights reserved</footer>
     <div class="rectangle2"></div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
