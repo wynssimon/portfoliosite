@@ -11,24 +11,18 @@
     <link rel="musicxml" href="./Band_Of_Brothers.musicxml" />
   </head>
   <body>
-    <a href="index.html"><h1>Simon Wyns</h1></a>
-    <div class="rectangle"></div>
-    <ul id="links2">
-      <ul>
+    <header>
+      <a href="index.html"><h1>Simon Wyns</h1></a>
+      <div class="rectangle"></div>
+      <ul id="links2">
         <a id="onderlijning" class="bio-knop" href="#bio">Bio</a>
-      </ul>
-      <br />
-      <ul>
         <a id="onderlijning" class="portfolio-knop" href="#portfolio"
           >Portfolio</a
         >
-      </ul>
-      <br />
-      <ul>
         <a id="onderlijning" class="contact-knop" href="#contact">Contact</a>
       </ul>
-    </ul>
-    <div class="hamburger" onclick="myFunction(this)">
+    </header>
+    <div class="hamburger">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
@@ -46,31 +40,34 @@
       </div>
       <div class="line"></div>
       <div class="grid1">
-        <img class="simon" src="img/simon.jpg" alt="" />
-        <p>
-          Ik ben Simon Wyns, 19 jaar, en ik studeer grafische & digitale media
-          aan de AP Hogeschool in Antwerpen. In juni 2023 studeer ik normaal
-          gezien af binnen het vak Coding. Ik hou van heel de interface wereld,
-          van appdesign tot webdesign, maar ik besef ook dat ik hier nog enorm
-          veel over te leren heb. Ik studeer af met kennis van HTML, CSS,
-          JavaScript, PHP, React JS, React Native, ...; maar ook met kunde op
-          vlak van video, photoshop, illustrator, ...
-          <br />
-          In mijn vrije tijd speel ik accordeon en maak ik er
-          <a
-            class="youtubelink"
-            href="https://www.youtube.com/channel/UCRW1Ty0oqCTkIgfujuuQL7g"
-            target="_blank"
-            >YouTube</a
-          >
-          video's mee. Ook hou ik heel veel van sporten, van voetbal tot
-          wielrennen tot lopen.
-          <br />
-          <br />
-          <button class="hier">
-            <a class="download" href="./cv.pdf" download>Download mijn cv</a>
-          </button>
-        </p>
+        <div>
+          <img class="simon" src="img/simon.jpg" alt="" />
+          <div>
+            <p>
+              Ik ben Simon Wyns, 19 jaar, en ik studeer grafische & digitale
+              media aan de AP Hogeschool in Antwerpen. In juni 2023 studeer ik
+              normaal gezien af binnen het vak Coding. Ik hou van heel de
+              interface wereld, van appdesign tot webdesign, maar ik besef ook
+              dat ik hier nog enorm veel over te leren heb. Ik studeer af met
+              kennis van HTML, CSS, JavaScript, PHP, React JS, React Native,
+              ...; maar ook met kunde op vlak van video, photoshop, illustrator,
+              ...
+              <br />
+              In mijn vrije tijd speel ik accordeon en maak ik er
+              <a
+                class="youtubelink"
+                href="https://www.youtube.com/channel/UCRW1Ty0oqCTkIgfujuuQL7g"
+                target="_blank"
+                >YouTube</a
+              >
+              video's mee. Ook hou ik heel veel van sporten, van voetbal tot
+              wielrennen tot lopen.
+            </p>
+            <div class="wrapper">
+              <a href="./cv.pdf" download><span>Download cv</span></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div id="portfolio" class="portfolio">
